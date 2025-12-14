@@ -1,4 +1,4 @@
 for i in range(100):
-    print("melih benim yarrami yesin!")
+    print("utku benim yarrami yesin!")
 
 # Burayı alpar yazo
