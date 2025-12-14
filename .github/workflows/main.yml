@@ -1,0 +1,22 @@
+name: Create TODO Issues
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:  # 👈 Required to allow GITHUB_TOKEN to create issues
+  contents: read
+  issues: write
+
+jobs:
+  create-issues:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: TODO to Issue
+        uses: alstr/todo-to-issue-action@v5.1.13
+        with:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
