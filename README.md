@@ -1,2 +1,2 @@
 # diva-github-workshop
-eğim type sh,t
+eğim type shit
